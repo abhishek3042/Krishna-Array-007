@@ -9,86 +9,86 @@
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
   </head>
-  <style>
-    
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-.footercontainer {
-    max-width: 1270px; 
-    margin: 0 auto;
-    padding: 20px;
-}
+        .footercontainer {
+            max-width: 1270px; 
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-.footerp{
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 12px !important;
-    font-weight: 450;
-    line-height: 1.4;
-    margin-bottom: -10px;
-    color: #333333 ;
-}
-.footerh1{
-    font-family: "Roboto Condensed", sans-serif;
-    color: #333333c7;
-    margin-bottom: -5px;
-    font-size: 20px;
-}
+        .footerp{
+            font-family: "Roboto Condensed", sans-serif;
+            font-size: 12px !important;
+            font-weight: 450;
+            line-height: 1.4;
+            margin-bottom: -10px;
+            color: #333333 ;
+        }
+        .footerh1{
+            font-family: "Roboto Condensed", sans-serif;
+            color: #333333c7;
+            margin-bottom: -5px;
+            font-size: 20px;
+        }
 
-@media only screen and (max-width: 600px) {
-    .footerp {
-        font-size: 14px;
-    }
+        @media only screen and (max-width: 600px) {
+            .footerp {
+                font-size: 14px;
+            }
 
-}
-.f1{
-    grid-area: f1;
-    border: 2px solid red;
-}
-.f2{
-    grid-area: f2;
-    border: 2px solid black;
-}
-.f3{
-    grid-area: f3;
-    border: 2px solid pink;
-}
-.f4{
-    grid-area: f4;
-    border: 2px solid orange;
-}
-.fcontainer2{
-    width: 99%;
-    height: 465px;
-    margin: auto;
-    display: grid;
-    border: 2px solid blue;
-    grid-template-areas:
-            "f1 f2"
-            "f3 f3"
-            "f4 f4";
-        grid-template-rows: 32% 43% 24%;
-        grid-template-columns: 72% 28%;
-}
-.f1>h2{
-    font-family: "Roboto Condensed", sans-serif;
-    color: #333333c7;
-    margin-bottom: -5px;
-    font-size: 14px;
-}
-.ficon{
-    display: flex;
-    align-items: center;
-}
-.ficon>img{
-    height: 27px;
-    width: fit-content;
-}
-  </style>
+        }
+        .f1{
+            grid-area: f1;
+            border: 2px solid red;
+        }
+        .f2{
+            grid-area: f2;
+            border: 2px solid black;
+        }
+        .f3{
+            grid-area: f3;
+            border: 2px solid pink;
+        }
+        .f4{
+            grid-area: f4;
+            border: 2px solid orange;
+        }
+        .fcontainer2{
+            width: 99%;
+            height: 465px;
+            margin: auto;
+            display: grid;
+            border: 2px solid blue;
+            grid-template-areas:
+                    "f1 f2"
+                    "f3 f3"
+                    "f4 f4";
+                grid-template-rows: 32% 43% 24%;
+                grid-template-columns: 72% 28%;
+        }
+        .f1>h2{
+            font-family: "Roboto Condensed", sans-serif;
+            color: #333333c7;
+            margin-bottom: -5px;
+            font-size: 14px;
+        }
+        .ficon{
+            display: flex;
+            align-items: center;
+        }
+        .ficon>img{
+            height: 27px;
+            width: fit-content;
+        }
+    </style>
   <body>
    <header class="position-sticky bg-white">
       <nav class="navbar d-flex align-items-center justify-content-between">
@@ -263,107 +263,238 @@ body {
         </div>
       </nav>
       <script>
-  const searchSpan = document.querySelector(".search-text");
-const categories = [
-  "Running Shoes",
-  "Running Clothes",
-  "Yoga Mats",
-  "Fitness Equipment",
-  "Camping Gear",
-];
-let currentIndex = 0;
+            const searchSpan = document.querySelector(".search-text");
+            const categories = [
+            "Running Shoes",
+            "Running Clothes",
+            "Yoga Mats",
+            "Fitness Equipment",
+            "Camping Gear",
+            ];
+            let currentIndex = 0;
 
-function changeText() {
-  searchSpan.textContent = categories[currentIndex];
-  currentIndex = (currentIndex + 1) % categories.length;
-}
+            function changeText() {
+            searchSpan.textContent = categories[currentIndex];
+            currentIndex = (currentIndex + 1) % categories.length;
+            }
 
-setInterval(changeText, 1000); 
-</script>
+            setInterval(changeText, 1000); 
+        </script>
     </header>
-    <div class="categories-1">
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://contents.mediadecathlon.com/s1045477/k$2b757dc2a5f85e6057b8db1abe662cbe/Frame%20427321149.png?format=auto&quality=70&f=1680x0"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <p class="card-text">Men</p>
+    <!-- Abhishek Categories top  (Below⬇️)-->
+    <div class="categories-1 container text-center row column-gap-3 mx-auto mt-5">
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1045477/k$2b757dc2a5f85e6057b8db1abe662cbe/Frame%20427321149.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Men</p>
+            </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://contents.mediadecathlon.com/s1045477/k$2b757dc2a5f85e6057b8db1abe662cbe/Frame%20427321149.png?format=auto&quality=70&f=1680x0"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <p class="card-text">Men</p>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1045475/k$12b5f8f2f6313a7d989942235a99d296/Frame%20427321150.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Women</p>
+            </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://contents.mediadecathlon.com/s1045477/k$2b757dc2a5f85e6057b8db1abe662cbe/Frame%20427321149.png?format=auto&quality=70&f=1680x0"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <p class="card-text">Men</p>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1068853/k$00d8091e4ca10180ad0fb81f6c1999f1/defaut.jpg?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Kids</p>
+            </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://contents.mediadecathlon.com/s1045477/k$2b757dc2a5f85e6057b8db1abe662cbe/Frame%20427321149.png?format=auto&quality=70&f=1680x0"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <p class="card-text">Men</p>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1045470/k$cbc3de3b70c7f9ab0898a6a0bac32002/Frame%20427321152.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Shoes</p>
+            </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://contents.mediadecathlon.com/s1045477/k$2b757dc2a5f85e6057b8db1abe662cbe/Frame%20427321149.png?format=auto&quality=70&f=1680x0"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <p class="card-text">Men</p>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1045469/k$8bc888972b89e13df47a82b55c563868/Frame%20427321093.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Summer Collection</p>
+            </div>
         </div>
-      </div>
-
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://contents.mediadecathlon.com/s1045477/k$2b757dc2a5f85e6057b8db1abe662cbe/Frame%20427321149.png?format=auto&quality=70&f=1680x0"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <p class="card-text">Men</p>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1045469/k$8bc888972b89e13df47a82b55c563868/Frame%20427321093.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Sale</p>
+            </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://contents.mediadecathlon.com/s1045477/k$2b757dc2a5f85e6057b8db1abe662cbe/Frame%20427321149.png?format=auto&quality=70&f=1680x0"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <p class="card-text">Men</p>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1066101/k$389586e469464129321181a2c4577963/Frame%20427321153.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Accessories</p>
+            </div>
         </div>
-      </div>
-      <div class="card" style="width: 18rem">
-        <img
-          src="https://contents.mediadecathlon.com/s1045477/k$2b757dc2a5f85e6057b8db1abe662cbe/Frame%20427321149.png?format=auto&quality=70&f=1680x0"
-          class="card-img-top"
-          alt="..."
-        />
-        <div class="card-body">
-          <p class="card-text">Men</p>
-        </div>
-      </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1085351/k$f9284d9246d939697d0091461278fe9d/defaut.jpg?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Sports Equipment</p>
+            </div>
+        </div>     
     </div>
+    <!-- Abhishek Categories top  (above⬆️)-->
+    
+    <!-- Abhishek Bestseller In Summer Categories (Below⬇️)-->
+    <div><h5>Bestseller In Summer</h5></div>
+    <div class="categories-2 container text-center row column-gap-3 mx-auto mt-5">
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1066102/k$c47a48d7e3a223c8680a3371b918e905/Frame%20427321555.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Men T-shirt</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1066090/k$a3409654a3d379eb85ce27292059e757/Frame%20427321583.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Men Shorts</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1066087/k$55c65d7c7ef78c83a90373c3d3c8a103/Frame%20427321584.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Men Track Pants</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1066082/k$7232432d9230b73fe7fefda7572ead6a/Frame%20427321585.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Men Trousers</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1066073/k$1eec09d0260a56c286e7e55e7fdcd22e/Frame%20427321586.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Women Tops</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1066065/k$3a70839bb8f840710be125c01a0b00bf/Frame%20427321587.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Women Shorts</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1066066/k$2bc3c0871570a8142ffaadddc364182d/Frame%20427321588.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Women Tracks</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1066111/k$9364c81ad8719b3c8c23677bfcd5351e/Frame%20427321589.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Leggings</p>
+            </div>
+        </div>     
+    </div>
+    <!-- Abhishek Bestseller In Summer Categories  (above⬆️)-->
+    
+    <!-- Abhishek Top Searched In Water Sport Collection (Below⬇️)-->
+    <div><h5>Top Searched In Water Sport Collection</h5></div>
+    <div class="categories-2 container text-center row column-gap-3 mx-auto mt-5">
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1057677/k$bd3d939a9383d6c47f0dd0f04502f0ae/Frame%20427321294.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Swimming Goggles</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1057695/k$07440434ea9f5c84378a6e010386e198/Frame%20427321295.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Swimming Caps</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1057709/k$e772f192a31586e19c6ebb0a36c95036/Frame%20427321296.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Men Swim Costumes</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1057670/k$79ff78ad41f7be4c0816a885ba023c2e/Frame%20427321297.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Women Swim Costumes</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1057685/k$bc6ede656ba08452016281fa4e875b78/Frame%20427321301.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Kids Swim Costumes</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1066904/k$9b5ce101a6be8458f963f706d2bf7b7b/Frame%20427321631.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Swim Learing Accessory</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1057683/k$a4bf6574fd4740f5096beb87a8dcf120/Frame%20427321299.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Flip flops</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1057669/k$af983ba3998f9543635de84b38133881/Frame%20427321300.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Microfiber Towels</p>
+            </div>
+        </div>     
+    </div>
+    <!-- Abhishek Top Searched In Water Sport Collection Categories  (above⬆️)-->
+        
+    <!-- Abhishek Most Loved Accessories In Summer (Below⬇️)-->
+    <div><h5>Most Loved Accessories In Summer</h5></div>
+    <div class="categories-2 container text-center row column-gap-3 mx-auto mt-5">
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1066075/k$b1055e53ea9e57fe5500df733070d5e3/Frame%20427321590.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Sunglasses</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1066069/k$53c01b33716737eddcfb373cac825d99/Frame%20427321591.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Caps & Hat</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1066910/k$b93306ad58723d1ba41031c45e73a267/Frame%20427321595.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Socks</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1066088/k$953c6b5ee89448bcc644e102f1127e89/Frame%20427321596.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Water Bottles</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1066113/k$b661a691d23c09f580fa22c060c8be2c/Frame%20427321597.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Umbrella</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1083934/k$407817b588851f856b8cbd6a35d33eb8/defaut.jpg?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Travel Accessory</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1066911/k$c1f158765bfd19c13f89d6bd0ad130f7/Frame%20427321593.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Bags & Bagpack</p>
+            </div>
+        </div>
+        <div class="card col border border-0" style="width: 18rem">
+            <img src="https://contents.mediadecathlon.com/s1066912/k$c001690c250abd426acfdcf6a329cafa/Frame%20427321592.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
+            <div class="card-body">
+                <p class="card-text">Massagers</p>
+            </div>
+        </div>     
+    </div>
+    <!-- Abhishek Most Loved Accessories In Summer Categories  (above⬆️)-->
     <div>
       <h3>fahad code</h3>
     </div>
