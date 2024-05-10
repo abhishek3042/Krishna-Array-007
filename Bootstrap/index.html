@@ -88,27 +88,53 @@
             height: 27px;
             width: fit-content;
         }
+       
+         .dropdown-menu.show{
+            display:flex;
+            flex-direction: column;
+            width:100vw;
+            height:70vh;
+        }
+
+        .dropdown-menu>div>div>a{
+            color:#6c757d;
+        }
+ .search-container {
+  position: relative;
+}
+
+#search::placeholder {
+  position: absolute;
+  top: 0;
+  left: 12;
+  padding: 10px; 
+}
+
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left:0px;
+  transform: translateY(-50%);
+}
+
+
+
     </style>
   <body>
-   <header class="position-sticky bg-white">
-      <nav class="navbar d-flex align-items-center justify-content-between">
-        <div>
-          <button
-            class="navbar-toggler d-flex justify-content-center"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-            <p class="text-black">
+  <header class="position-relative">
+          <nav class="navbar bg-body-tertiary fixed-top ">
+  <div class="container-fluid">
+    <button class="navbar-toggler d-flex justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+       <p class="text-black">
               All <br />
               Sports
             </p>
-          </button>
-        </div>
+    </button>
+   
 
-        <div>
+     <div>
           <img
             style="width: 144px; height: 21.44px"
             src="./assets/Image20240507225050.png"
@@ -261,8 +287,565 @@
             </div>
           </a>
         </div>
-      </nav>
-      <script>
+    
+   
+</nav>
+
+ <div class="offcanvas offcanvas-end w-100  "  style="height:120px;" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header d-flex ">
+        <button type="button" class="btn-close " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+     
+        
+      </div>
+      <div class="offcanvas-body ">
+        <div class=" d-flex justify-content-around pe-3">
+        
+        
+          <div class="nav-item ">
+            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             All Sports
+             
+            </a>
+            
+            <ul class="dropdown-menu ">
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex flex-column mx-5">
+                        <p class="h6">Outdoor Sports</p>
+                        <a href="#" class="text-decoration-none">Hiking and Trekking</a>
+                        <a href="#" class="text-decoration-none"  >Camping</a>
+                        <a href="#" class="text-decoration-none">Wildlife Watching</a>
+                        <a href="#" class="text-decoration-none">Skiing and Snowboarding</a>
+                        <a href="#" class="text-decoration-none">Rock Climbing &amp; Mountaineering</a>
+                        <a href="#" class="text-decoration-none">Fishing</a>
+                        <a href="#"class="text-decoration-none">Horse Riding</a>
+                        <a href="#" class="text-decoration-none">Kites</a>
+                    </div>
+                        <div class="d-flex flex-column mx-5 ">
+                            <p class="h6">Water Sports</p>
+                            <a href="#" class="text-decoration-none">Swimming</a>
+                            <a href="#" class="text-decoration-none">Surfing and Beach Sports</a>
+                            <a href="#" class="text-decoration-none"  >Snorkelling and Diving</a>
+                            <a href="#" class="text-decoration-none">Kayaking and Stand Up Paddle</a>
+                            <a href="#" class="text-decoration-none">Sailing</a>
+                        </div>
+                            <div class="d-flex flex-column mx-5">
+                                <p class="h6">Fitness Sports</p>
+                                <a href="#" class="text-decoration-none">Fitness Cardio</a>
+                                <a href="#" class="text-decoration-none">Body Building and Cross Training</a>
+                                <a href="#" class="text-decoration-none" >Athleisure &amp; Home Training</a>
+                                <a href="#" class="text-decoration-none">Gymnastics</a>
+                                <a href="#" class="text-decoration-none">Yoga</a>
+                                <a href="#" class="text-decoration-none">Kids Sports</a>
+                                <a href="#" class="text-decoration-none">Boxing and Martial Arts</a>
+                                <a href="#" class="text-decoration-none">Installation &amp; Service</a>
+                            </div>
+                                <div class="d-flex flex-column mx-5">
+                                    <p class="h6">Racket Sports</p>
+                                    <a href="#" class="text-decoration-none">Badminton</a>
+                                    <a href="#" class="text-decoration-none">Tennis</a>
+                                    <a href="#" class="text-decoration-none">Table Tennis</a>
+                                    <a href="#" class="text-decoration-none">Squash</a>
+                                    <a href="#" class="text-decoration-none">Padel</a>
+                                    <a href="#" class="text-decoration-none">Racket Stringing Service </a>
+                                </div>
+                                <div class="d-flex flex-column mx-5">
+                                    <p class="h6">Team Sports</p>
+                                    <a href="#" class="text-decoration-none">Football</a>
+                                    <a href="#" class="text-decoration-none">Cricket</a>
+                                    <a href="#" class="text-decoration-none">Basketball</a>
+                                    <a href="#"class="text-decoration-none">Volleyball</a>
+                                    <a href="#" class="text-decoration-none">Hockey</a>
+                                    <a href="#" class="text-decoration-none">Rugby</a>
+                                    <a href="#" class="text-decoration-none">Baseball</a>
+                                </div>
+                                
+                            </div>
+
+
+                            <div class="d-flex justify-content-around">
+
+                                <div class="d-flex flex-column mx-5">
+                                    <p class="h6">Running and Walking</p>
+                                    <a href="#" class="text-decoration-none">Running</a>
+                                    <a href="#" class="text-decoration-none" >Walking</a>
+                                    <a href="#" class="text-decoration-none">Triathlon</a>
+                                </div>
+                                <div class="d-flex flex-column mx-5">
+                                    <p class="h6">Target Sports</p>
+                                    <a href="#" class="text-decoration-none" >Carrom</a>
+                                    <a href="#" class="text-decoration-none">Golf</a>
+                                    <a href="#" class="text-decoration-none">Archery</a>
+                                    <a href="#" class="text-decoration-none">Darts</a>
+                                    <a href="#" class="text-decoration-none">Billiards</a>
+                                </div>
+                                <div class="d-flex flex-column mx-5">
+                                    <p class="h6">Cycling</p>
+                                    <a href="#" class="text-decoration-none">Cycling</a>
+                                    <a href="#" class="text-decoration-none">Cycle Servicing</a>
+                                </div>
+                                <div class="d-flex flex-column mx-5">
+                                    <p class="h6">Skating</p>
+                                    <a href="#" class="text-decoration-none">Skating</a>
+                                    <a href="#" class="text-decoration-none">Skateboarding</a>
+                                    <a href="#" class="text-decoration-none">Scooter</a>
+                                </div>
+                                <div class="d-flex flex-column mx-5">
+                                    <p class="h6">Health &amp; Nutrition</p>
+                                    <a href="#" class="text-decoration-none">Nutrition Drinks &amp; Bars</a>
+                                    <a href="#" class="text-decoration-none">Whey Protein</a>
+                                    <a href="#" class="text-decoration-none">Recovery &amp; Muscle Supports</a>
+                                </div>
+                            </div>
+            
+            </ul>
+          </div>
+
+
+            <div class="nav-item ">
+            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Men
+            </a>
+            <ul class="dropdown-menu w-100">
+                <div class=" d-flex justify-content-center">
+                    <div class="d-flex flex-column mx-5">
+                    <p class="h6">Men's Footwear</p>
+                    <a href="#" class="text-decoration-none" >Men Shoes</a>
+                    <a href="#" class="text-decoration-none">Men Sandals</a>
+                    <a href="#" class="text-decoration-none">Men Flip Flops &amp; Aqua Shoes</a>
+                    <a href="#" class="text-decoration-none">Men Running Shoes</a>
+                    <a href="#" class="text-decoration-none" >Men Walking Shoes</a>
+                    <a href="#"  class="text-decoration-none">Men Outdoor Shoes &amp; Boots</a>
+                    <a href="#" class="text-decoration-none">Men Non Marking Shoes</a>
+                    <a href="#" class="text-decoration-none">Men Football Shoes</a>
+                    <a href="#" class="text-decoration-none">Socks </a>
+                    <a href="#" class="text-decoration-none">Sports Shoes Under 999</a>
+                </div>
+
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Men's Topwear</p>
+                    <a href="#" class="text-decoration-none">Men Atleisure T-shirts</a>
+                    <a href="#" class="text-decoration-none">Men Cotton T-shirt</a>
+                    <a href="#" class="text-decoration-none">Men Polo T-shirts</a>
+                    <a href="#" class="text-decoration-none">Men Tank Tops</a>
+                    <a href="#" class="text-decoration-none">Men Shirts</a>
+                    <a href="#" class="text-decoration-none">Men UV Top &amp; Rash Guards</a>
+                    <a href="#" class="text-decoration-none">Men Sweatshirts &amp; Hoodies</a>
+                    <a href="#" class="text-decoration-none">Men Fleeces and Pullovers</a>
+                    <a href="#" class="text-decoration-none">T-shirts Under 999</a>
+                </div>
+                    <div class="d-flex flex-column mx-5">
+                        <p class="h6">Men's Jackets &amp; Sweatshirts</p>
+                        <a href="#" class="text-decoration-none">Men Raincoat &amp; poncos</a>
+                        <a href="#" class="text-decoration-none">Men Sports Jackets</a>
+                        <a href="#" class="text-decoration-none">Men Winter Jackets</a>
+                        <a href="#" class="text-decoration-none">Men Waterproof + Warm Jackets</a>
+                        <a href="#" class="text-decoration-none">Men Padded &amp; Down Jacket</a>
+                        <a href="#" class="text-decoration-none">Men Windcheaters</a>
+                        <a href="#" class="text-decoration-none">Jacket's Under 999</a>
+                    </div>
+
+                    <div class="d-flex flex-column mx-5">
+                        <p class="h6">Men's Bottomwear </p>
+                        <a href="#" class="text-decoration-none">Men Shorts</a>
+                        <a href="#" class="text-decoration-none">Men Track Pants &amp; Joggers</a>
+                        <a href="#" class="text-decoration-none">Men Waterproof Rain Pants</a>
+                        <a href="#" class="text-decoration-none">Men Trousers</a>
+                        <a href="#" class="text-decoration-none">Men Tights &amp; Compressions</a>
+                        <a href="#" class="text-decoration-none">Men Swimsuit</a>
+                        <a href="#" class="text-decoration-none">Shorts Under 999</a>
+                        <a href="#" class="text-decoration-none">Trackpants Under 999</a>
+                    </div>
+                    <div class="d-flex flex-column mx-5">
+                        <p class="h6">Men's Innerwear</p>
+                        <a href="#" class="text-decoration-none">Men Thermal Innerwear</a>
+                        <a href="#" class="text-decoration-none">Men Briefs Underwear</a>
+                    </div>
+                </div>
+               </ul>
+          </div>
+
+
+           <div class="nav-item ">
+            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Women
+            </a>
+            <ul class="dropdown-menu">
+             <div class="d-flex justify-content-center">
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Women's Footwear</p>
+                    <a href="#" class="text-decoration-none">Women Sports Shoes</a>
+                    <a href="#" class="text-decoration-none">Women Sandals</a>
+                    <a href="#" class="text-decoration-none">Women Running Shoes</a>
+                    <a href="#" class="text-decoration-none">Women Walking Shoes</a>
+                    <a href="#" class="text-decoration-none">Women Flip-flops &amp; Aqua Shoes</a>
+                    <a href="#" class="text-decoration-none">Women Non-Marking Shoes</a>
+                    <a href="#" class="text-decoration-none">Women Outdoor Waterproof Boots</a>
+                    <a href="#" class="text-decoration-none">Sports Shoes Under 999</a>
+                    <a href="#" class="text-decoration-none">Socks</a>
+                    <a href="#" class="text-decoration-none">Insoles</a>
+                </div>
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Women's Topwear</p>
+                    <a href="#"class="text-decoration-none">Women T-Shirts</a>
+                    <a href="#" class="text-decoration-none">Women Polo T-Shirt</a>
+                    <a href="#" class="text-decoration-none">Women Tank Tops</a>
+                    <a href="#" class="text-decoration-none">Women Crop Tops</a>
+                    <a href="#" class="text-decoration-none">Women Sweatshirt And Hoodies</a>
+                    <a href="#" class="text-decoration-none">Women Fleeces And Pullovers</a>
+                    <a href="#" class="text-decoration-none">Women Swimsuits And Bikini</a>
+                    <a href="#" class="text-decoration-none">Women Raincoats</a>
+                    <a href="#" class="text-decoration-none">Women Activewear </a>
+                    <a href="#" class="text-decoration-none">Activewear Under 999</a>
+                </div>
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Women's Jackets</p>
+                    <a href="#" class="text-decoration-none">Women Sports Jacket</a>
+                    <a href="#" class="text-decoration-none">Women Raincoats</a>
+                    <a href="#" class="text-decoration-none">Women Windcheaters</a>
+                    <a href="#" class="text-decoration-none">Women Winter Jackets</a>
+                    <a href="#" class="text-decoration-none">Women Snow Jackets</a>
+                    <a href="#" class="text-decoration-none">Women Padded And Down Jackets</a>
+                    <a href="#" class="text-decoration-none">Jackets Under 999</a>
+                </div>
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Women's Bottomwear</p>
+                    <a href="#" class="text-decoration-none">Women Shorts</a>
+                    <a href="#" class="text-decoration-none">Women Leggings</a>
+                    <a href="#" class="text-decoration-none">Women Trackpants</a>
+                    <a href="#" class="text-decoration-none">Women Trousers</a>
+                    <a href="#" class="text-decoration-none">Women Skirts</a>
+                    <a href="#" class="text-decoration-none">Shorts Under 999</a>
+                </div>
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6" >Women's Innerwear</p>
+                    <a href="#" class="text-decoration-none">Sports Bras</a>
+                    <a href="#" class="text-decoration-none">Women Thermal Innerwear</a>
+                    <a href="#" class="text-decoration-none">Sports Bra Under 999</a>
+                </div>
+            </div>
+            </ul>
+          </div>
+
+
+          <div class="nav-item ">
+            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Kids
+            </a>
+            <ul class="dropdown-menu">
+              <div class="d-flex justify-content-center">
+                <div class="d-flex flex-column mx-3">
+                    <p class="h6">Kids' Tops</p>
+                    <a href="#" class="text-decoration-none">Kids' T-shirts</a>
+                    <a href="#" class="text-decoration-none">Kids' Jackets</a>
+                    <a href="#" class="text-decoration-none">Kids' Fleeces and Pullovers</a>
+                </div>
+                <div class="d-flex flex-column mx-3">
+                    <p class="h6">Kids' Bottoms</p>
+                    <a href="#" class="text-decoration-none">Kids' Trousers</a>
+                    <a href="#" class="text-decoration-none">Kids' Shorts</a>
+                </div>
+                <div class="d-flex flex-column mx-3">
+                    <p class="h6">Kids' Footwear</p>
+                    <a href="#" class="text-decoration-none">Kids' Shoes</a>
+                    <a href="#" class="text-decoration-none">Kids' Sandals</a>
+                    <a href="#" class="text-decoration-none">Kids' Flip Flops</a>
+                    <a href="#" class="text-decoration-none">Kids' Socks</a>
+                </div>
+                <div class="d-flex flex-column mx-3">
+                    <p class="h6">Kids' Swimwear</p>
+                    <a href="#" class="text-decoration-none">Baby Swimwear</a>
+                    <a href="#" class="text-decoration-none">Boys Swimsuits</a>
+                    <a href="#" class="text-decoration-none">Girls Swimsuits</a>
+                    <a href="#" class="text-decoration-none">Aqua Learning Accessories</a>
+                </div>
+                <div class="d-flex flex-column mx-3">
+                    <p class="h6">Kids' Cycle</p>
+                    <a href="#" class="text-decoration-none" >Below 6 years</a>
+                    <a href="#"class="text-decoration-none" >6-12 years</a>
+                </div>
+                <div class="d-flex flex-column mx-3">
+                    <p class="h6">Kids' Scooters and Skates</p>
+                    <a href="#" class="text-decoration-none">Inline Skates</a>
+                    <a href="#" class="text-decoration-none">Skating Guards and Helmets</a>
+                    <a href="#" class="text-decoration-none">Skateboards</a>
+                    <a href="#" class="text-decoration-none">Waveboards</a>
+                    <a href="#" class="text-decoration-none">Longboards</a>
+                    <a href="#" class="text-decoration-none">Scooters</a>
+                </div>
+                <div class="d-flex flex-column mx-3">
+                    <p class="h6">Kids' Cricket</p>
+                    <a href="#" class="text-decoration-none">Cricket Kits</a>
+                    <a href="#" class="text-decoration-none">Cricket Bats</a>
+                </div>
+                <div class="d-flex flex-column mx-3">
+                    <p class="h6">Kids' Innerwear</p>
+                    <a href="#" class="text-decoration-none">Kids' Base Layer</a>
+                </div>
+                <div class="d-flex flex-column mx-3">
+                    <p class="h6">Activewear</p>
+                    <a href="#" class="text-decoration-none" class="text-decoration-none">Kids' Activewear</a>
+                </div>
+                <div class="d-flex flex-column mx-3">
+                    <p class="h6">Kids' Home Equipment</p>
+                    <a href="#" class="text-decoration-none">Kids' Equipment</a>
+                </div>
+            </div>
+            </ul>
+          </div>
+
+
+          <div class="nav-item ">
+            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Sports Accessories
+            </a>
+            <ul class="dropdown-menu">
+              <div class="d-flex justify-content-center">
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Bags &amp; Backpacks</p>
+                    <a href="#" class="text-decoration-none">Sports Bags</a>
+                    <a href="#" class="text-decoration-none">Backpacks</a>
+                    <a href="#" class="text-decoration-none">Laptop Bags</a>
+                    <a href="#" class="text-decoration-none">Workout Bags</a>
+                    <a href="#" class="text-decoration-none">Travel &amp; Trekking Rucksacks</a>
+                    <a href="#" class="text-decoration-none">Trolley Bags</a>
+                    <a href="#" class="text-decoration-none">Duffle Bags</a>
+                    <a href="#" class="text-decoration-none">Fanny Bags And Bum Bags</a>
+                    <a href="#" class="text-decoration-none">Waterproof Bags</a>
+                    <a href="#" class="text-decoration-none">Backpack Rain Covers</a>
+                </div>
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Travel Accessories</p>
+                    <a href="#" class="text-decoration-none">Sunglasses</a>
+                    <a href="#" class="text-decoration-none">Polarised Sunglasses</a>
+                    <a href="#" class="text-decoration-none">Water Bottles</a>
+                    <a href="#" class="text-decoration-none">Caps And Beanies</a>
+                    <a href="#" class="text-decoration-none">Watches</a>
+                    <a href="#"class="text-decoration-none">Umbrellas</a>
+                    <a href="#" class="text-decoration-none">Towels</a>
+                    <a href="#" class="text-decoration-none">Gloves</a>
+                    <a href="#" class="text-decoration-none">Socks</a>
+                    <a href="#" class="text-decoration-none">Wrist and Head Bands</a>
+                    <a href="#" class="text-decoration-none">Backpack Rain Covers</a>
+                    <a href="#" class="text-decoration-none">Travel Accessories</a>
+                </div>
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Sports &amp; Training Accessories</p>
+                    <a href="#" class="text-decoration-none">Fitness Accessories</a>
+                    <a href="#" class="text-decoration-none">Cycling Accessories</a>
+                    <a href="#" class="text-decoration-none">Backpacking Accessories</a>
+                    <a href="#" class="text-decoration-none">Running &amp; Jogging Accessories</a>
+                    <a href="#" class="text-decoration-none">Badminton Accessories</a>
+                    <a href="#" class="text-decoration-none">Swimming Accessories</a>
+                    <a href="#" class="text-decoration-none">Skating Guards and Helmets</a>
+                    <a href="#" class="text-decoration-none">Archery Bow And Arrow</a>
+                    <a href="#" class="text-decoration-none">Darts And Dart Boards</a>
+                    <a href="#" class="text-decoration-none">Carrom Boards And Accessories</a>
+                    <a href="#" class="text-decoration-none">Cones and Ladder</a>
+                    <a href="#" class="text-decoration-none">Nutrition's and Supplements</a>
+                </div>
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Outdoor Camping Accessories </p>
+                    <a href="#" class="text-decoration-none">Camping Tents</a>
+                    <a href="#" class="text-decoration-none">Camping Furnitures</a>
+                    <a href="#" class="text-decoration-none">Sleeping Bags</a>
+                    <a href="#" class="text-decoration-none">Binoculars &amp; Flashlights </a>
+                    <a href="#" class="text-decoration-none">Knifes</a>
+                </div>
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Supports and Massagers</p>
+                    <a href="#" class="text-decoration-none">Massagers</a>
+                    <a href="#" class="text-decoration-none">Supports &amp; Braces</a>
+                    <a href="#" class="text-decoration-none">Rehab Accessories</a>
+                </div>
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Hydration &amp; Nutrition</p>
+                    <a href="#" class="text-decoration-none">Isotonic drinks</a>
+                    <a href="#" class="text-decoration-none">Shakers</a>
+                    <a href="#" class="text-decoration-none">Supplements</a>
+                </div>
+            </div>
+            </ul>
+          </div>
+
+
+
+          <div class="nav-item">
+            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Sports Equipment
+            </a>
+            <ul class="dropdown-menu">
+              <div class="d-flex justify-content-center">
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Outdoor And Camping Equipment</p>
+                    <a href="#" class="text-decoration-none">Camping Tent</a>
+                    <a href="#" class="text-decoration-none">Camping Chairs And Bed</a>
+                    <a href="#" class="text-decoration-none">Sleeping Bags</a>
+                    <a href="#" class="text-decoration-none">Waterproof Trekking Boots</a>
+                    <a href="#" class="text-decoration-none">Ski Equipment</a>
+                    <a href="#" class="text-decoration-none" >Rock Climbing Equipment</a>
+                    <a href="#" class="text-decoration-none">Binoculars And Flashlights</a>
+                </div>
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Gym And Workout Equipments</p>
+                    <a href="#" class="text-decoration-none">Gym Weights &amp; Dumbbells</a>
+                    <a href="#" class="text-decoration-none" >Electric Bike</a>
+                    <a href="#" class="text-decoration-none">Elliptical &amp; Cross Trainer</a>
+                    <a href="#" class="text-decoration-none">Treadmills</a>
+                    <a href="#" class="text-decoration-none">Home Gym</a>
+                    <a href="#" class="text-decoration-none">Resistance Training Bands</a>
+                    <a href="#" class="text-decoration-none">Gym Gloves &amp; Supports</a>
+                    <a href="#" class="text-decoration-none">Gym Mat &amp; Accessories</a>
+                </div>
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Racket Sports And Accessories</p>
+                    <a href="#" class="text-decoration-none">Badminton Rackets</a>
+                    <a href="#" class="text-decoration-none">Badminton Shuttles</a>
+                    <a href="#" class="text-decoration-none">Badminton Net</a>
+                    <a href="#" class="text-decoration-none">Badminton Racket Strings</a>
+                    <a href="#" class="text-decoration-none">Badminton Racket Grips</a>
+                    <a href="#" class="text-decoration-none">Tennis Rackets</a>
+                    <a href="#" class="text-decoration-none">Tennis Balls</a>
+                    <a href="#" class="text-decoration-none">Tennis Racket Grips</a>
+                    <a href="#" class="text-decoration-none">TT Bats, Balls And Tables</a>
+                </div>
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Team Sports Essentials</p>
+                    <a href="#" class="text-decoration-none">Footballs</a>
+                    <a href="#" class="text-decoration-none">Football Training Accessories</a>
+                    <a href="#" class="text-decoration-none">Basketball </a>
+                    <a href="#" class="text-decoration-none">Basketball Hoops</a>
+                    <a href="#" class="text-decoration-none">Standing Basketball Backboard</a>
+                    <a href="#" class="text-decoration-none">Tennis Cricket Bats And Balls</a>
+                    <a href="#" class="text-decoration-none">Leather Cricket Bats And Balls</a>
+                    <a href="#" class="text-decoration-none">Cricket Protection And Kits</a>
+                    <a href="#" class="text-decoration-none">Volleyball</a>
+                </div>
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Leisure Sport Equipment</p>
+                    <a href="#" class="text-decoration-none">Darts</a>
+                    <a href="#" class="text-decoration-none">Skating</a>
+                    <a href="#" class="text-decoration-none">Cycling</a>
+                    <a href="#" class="text-decoration-none">Fishing</a>
+                    <a href="#" class="text-decoration-none">Billiards</a>
+                    <a href="#" class="text-decoration-none">Carrom</a>
+                    <a href="#" class="text-decoration-none">Archery</a>
+                </div>
+            </div>
+            </ul>
+          </div>
+
+
+
+          <div class="nav-item ">
+            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Gym Activewear & Equipment
+            </a>
+            <ul class="dropdown-menu">
+              <div class="d-flex justify-content-center">
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Men Gym Activewear</p>
+                    <a href="#" class="text-decoration-none" >Gym Shorts</a>
+                    <a href="#" class="text-decoration-none">Gym T-Shirts</a>
+                    <a href="#" class="text-decoration-none" >Gym Trackpants</a>
+                    <a href="#" class="text-decoration-none">Gym Jackets</a>
+                    <a href="#" class="text-decoration-none">Gym Tanktops</a>
+                    <a href="#" class="text-decoration-none">Gym Shoes</a>
+                </div>
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Women Gym Activewear</p>
+                    <a href="#" class="text-decoration-none">Sports Bras</a>
+                    <a href="#" class="text-decoration-none">Gym Leggings</a>
+                    <a href="#" class="text-decoration-none">Gym T-Shirts</a>
+                    <a href="#" class="text-decoration-none">Gym Pants</a>
+                    <a href="#" class="text-decoration-none">Gym Jackets</a>
+                    <a href="#" class="text-decoration-none">Gym Shorts</a>
+                    <a href="#" class="text-decoration-none">Gym Tank Tops</a>
+                    <a href="#" class="text-decoration-none">Gym Shoes</a>
+                </div>
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Gym Accessories</p>
+                    <a href="#" class="text-decoration-none">Resistance Training Bands</a>
+                    <a href="#" class="text-decoration-none">Gym Gloves and Supports</a>
+                    <a href="#" class="text-decoration-none">Skipping Ropes</a>
+                    <a href="#" class="text-decoration-none">Strength Training Accessories</a>
+                    <a href="#" class="text-decoration-none">Boxing Gloves and Accessories</a>
+                    <a href="#" class="text-decoration-none">Yoga Mat and Accessories</a>
+                    <a href="#" class="text-decoration-none">Gym Bags and Accessories</a>
+                    <a href="#" class="text-decoration-none">Abs and Balance Equipment</a>
+                    <a href="#" class="text-decoration-none">Gym Mat and Accessories</a>
+                    <a href="#" class="text-decoration-none">Gym Ball and Pilate Accessories</a>
+                    <a href="#" class="text-decoration-none">Mobility</a>
+                </div>
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Home Gym Equipment</p>
+                    <a href="#" class="text-decoration-none" >Gym Weights and Dumbbells</a>
+                    <a href="#" class="text-decoration-none" >Home Gym</a>
+                    <a href="#" class="text-decoration-none" >Gym Bench</a>
+                    <a href="#" class="text-decoration-none" >Gym Squat Rack</a>
+                    <a href="#" class="text-decoration-none">Elliptical Cross Trainer</a>
+                    <a href="#" class="text-decoration-none" >Exercise Bike</a>
+                    <a href="#" class="text-decoration-none" >Punching Bags</a>
+                    <a href="#" class="text-decoration-none" >Treadmills</a>
+                    <a href="#" class="text-decoration-none" >TRAMPOLINE</a>
+                    <a href="#" class="text-decoration-none" >Rowers</a>
+                    <a href="#"  class="text-decoration-none">Step and Steppers</a>
+                </div></div>
+            </ul>
+          </div>
+
+
+
+          <div class="nav-item ">
+            <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Online Exclusive Brands
+            </a>
+            <ul class="dropdown-menu">
+             
+                   <div class="d-flex justify-content-center">
+                    <div class="d-flex flex-column mx-5">
+                        <p class="h6">Running &amp; Walking</p>
+                        <a href="#" class="text-decoration-none">Adidas</a>
+                        <a href="#" class="text-decoration-none" >Saucony</a>
+                        <a href="#" class="text-decoration-none">Tifosi</a>
+                        <a href="#" class="text-decoration-none">Shokz</a>
+                        <a href="#" class="text-decoration-none">Hyperice</a>
+                        <a href="#" class="text-decoration-none">Coros</a>
+                    </div>
+                    <div class="d-flex flex-column mx-5">
+                        <p class="h6">Outdoor</p>
+                        <a href="#" class="text-decoration-none">RAB</a>
+                        <a href="#" class="text-decoration-none">Dynafit</a>
+                        <a href="#" class="text-decoration-none" >Salewa</a>
+                        <a href="#" class="text-decoration-none">Sea To Summit</a>
+                        <a href="#" class="text-decoration-none">Tatonka</a>
+                        <a href="#" class="text-decoration-none">Leatherman</a>
+                        <a href="#"class="text-decoration-none"  >Ledlenser</a>
+                        <a href="#" class="text-decoration-none" >Craghoppers</a>
+                    </div>
+                 <div class="d-flex flex-column mx-5">
+                    <p class="h6">Cycling</p>
+                    <a href="#" class="text-decoration-none" >ELITE</a>
+                    <a href="#" class="text-decoration-none">Blub</a>
+                </div>
+                <div class="d-flex flex-column mx-5">
+                    <p class="h6">Health &amp; Fitness</p>
+                    <a href="#" class="text-decoration-none">Sole</a>
+                    <a href="#"  class="text-decoration-none">Xterra</a>
+                    <a href="#" class="text-decoration-none">The Whole Truth</a>
+                    <a href="#" class="text-decoration-none">RITE BITE MAX PROTEIN</a>
+                </div>
+            </div>
+            </ul>
+          </div>
+
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+
+  <script>
             const searchSpan = document.querySelector(".search-text");
             const categories = [
             "Running Shoes",
@@ -281,6 +864,7 @@
             setInterval(changeText, 1000); 
         </script>
     </header>
+   
     <!-- Abhishek Categories top  (Below⬇️)-->
     <div class="categories-1 container text-center row column-gap-3 mx-auto mt-5">
         <div class="card col border border-0" style="width: 18rem">
