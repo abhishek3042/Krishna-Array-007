@@ -10,84 +10,143 @@
     />
   </head>
     <style>
-        
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
-        .footercontainer {
-            max-width: 1270px; 
-            margin: 0 auto;
-            padding: 20px;
-        }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-        .footerp{
-            font-family: "Roboto Condensed", sans-serif;
-            font-size: 12px !important;
-            font-weight: 450;
-            line-height: 1.4;
-            margin-bottom: -10px;
-            color: #333333 ;
-        }
-        .footerh1{
-            font-family: "Roboto Condensed", sans-serif;
-            color: #333333c7;
-            margin-bottom: -5px;
-            font-size: 20px;
-        }
+.footercontainer {
+  max-width: 1270px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px;
+}
 
-        @media only screen and (max-width: 600px) {
-            .footerp {
-                font-size: 14px;
-            }
+.footerp {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px !important;
+  font-weight: 450;
+  line-height: 1.4;
+  margin-bottom: 0px;
+  color: #333333;
+}
 
-        }
-        .f1{
-            grid-area: f1;
-            border: 2px solid red;
-        }
-        .f2{
-            grid-area: f2;
-            border: 2px solid black;
-        }
-        .f3{
-            grid-area: f3;
-            border: 2px solid pink;
-        }
-        .f4{
-            grid-area: f4;
-            border: 2px solid orange;
-        }
-        .fcontainer2{
-            width: 99%;
-            height: 465px;
-            margin: auto;
-            display: grid;
-            border: 2px solid blue;
-            grid-template-areas:
-                    "f1 f2"
-                    "f3 f3"
-                    "f4 f4";
-                grid-template-rows: 32% 43% 24%;
-                grid-template-columns: 72% 28%;
-        }
-        .f1>h2{
-            font-family: "Roboto Condensed", sans-serif;
-            color: #333333c7;
-            margin-bottom: -5px;
-            font-size: 14px;
-        }
-        .ficon{
-            display: flex;
-            align-items: center;
-        }
-        .ficon>img{
-            height: 27px;
-            width: fit-content;
-        }
+.footerh1 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #333333c7;
+  margin-bottom: 7px;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .footerp {
+    font-size: 14px;
+  }
+}
+
+.f1 {
+  grid-area: f1;
+  box-sizing: border-box;
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+}
+
+.f2 {
+  grid-area: f2;
+}
+
+.f3 {
+  grid-area: f3;
+}
+
+.f4 {
+  grid-area: f4;
+}
+.f5 {
+  grid-area: f5;
+}
+.op {
+  gap: 200px;
+  align-items: center !important;
+}
+.fcontainer2 {
+  width: 99%;
+  height: 465px;
+  margin: auto;
+  display: grid;
+  grid-template-areas:
+    "f1 f2"
+    "f3 f5"
+    "f4 f5";
+  grid-template-rows: auto;
+  /* grid-template-rows: 32% 43% 24%; */
+  grid-template-columns: 72% 28%;
+}
+
+.promisef {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #333333c7;
+  margin-bottom: -5px;
+  font-size: 14px;
+}
+
+.ficon {
+  display: flex;
+  align-items: center;
+}
+
+.ficon > img {
+  height: 27px;
+  width: fit-content;
+}
+.footeritems h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #333333c7;
+  margin-bottom: 7px;
+  font-size: 17px;
+}
+.footeritems p {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px !important;
+  font-weight: 350;
+  line-height: 1.4;
+  margin-bottom: 0px;
+  color: #333333;
+}
+.transactionfooter {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #333333e5;
+  margin-bottom: 7px;
+  font-size: 17px;
+  display: flex;
+  align-items: center;
+}
+.transactionfooter1 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+}
+.f5 h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: #333333c7;
+  margin: 25px 10px;
+  font-size: 17px;
+  font-weight: 700;
+}
+.socialicons {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-top: 15px;
+}
+.f5 a {
+  color: #98959b;
+  margin: 5px 10px;
+}
        
          .dropdown-menu.show{
             display:flex;
@@ -1303,16 +1362,283 @@
        </div>
     </div>
     <div class="fcontainer2">
-        <div class="f1">
-            <h2>OUR PROMISE</h2>
-            <div class="ficon">
-                <img src="https://contents.mediadecathlon.com/s1066179/k$a1bad6c9d4b965d79eb8c64c8092fc0b/defaut.png?format=auto&f=969x0?format=auto" alt="">
-                <p>No Cost EMI Available</p>
+      <div class="f1">
+        <div class="col-sm-9">
+          <div class="d-flex flex-nowrap justify-content-between op">
+            <div class="order-1 p-2">
+              <h2 class="promisef p-2 g-col-6 fs-5">OUR PROMISE</h2>
             </div>
+            <div class="order-2 p-2">
+              <div class="d-flex flex-nowrap">
+                <div class="order-1 p-2">
+                  <a class="navbar-brand" href="#">
+                    <img
+                      src="https://contents.mediadecathlon.com/s1066179/k$a1bad6c9d4b965d79eb8c64c8092fc0b/defaut.png?format=auto&f=969x0?format=auto"
+                      alt="Bootstrap"
+                      width="30"
+                      height="30"
+                    />
+                    No Cost EMI Available
+                  </a>
+                </div>
+                <div class="order-2 p-2">
+                  <a class="navbar-brand" href="#">
+                    <img
+                      src="https://contents.mediadecathlon.com/s1066180/k$ec44ffaa3178b9073f1e88c6599adb99/defaut.png?format=auto&f=969x0?format=auto"
+                      alt="Bootstrap"
+                      width="30"
+                      height="30"
+                    />
+                    Easy Returns*
+                  </a>
+                </div>
+                <div class="order-3 p-2">
+                  <a class="navbar-brand" href="#">
+                    <img
+                      src="https://contents.mediadecathlon.com/s1066181/k$0867f40e52bfbd493ad7b8bceebd0120/defaut.png?format=auto&f=969x0?format=auto"
+                      alt="Bootstrap"
+                      width="30"
+                      height="30"
+                    />
+                    1 million+ happy Customers
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="f2"></div>
-        <div class="f3"></div>
-        <div class="f4"></div>
+      </div>
+      <div class="f2">
+        <div>
+          <h3 class="fw-bold">EXPERIENCE DECATHLON APP ON MOBILE</h3>
+        </div>
+        <div>
+          <img
+            src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/google-play-badge.f6fa1f85049d9cdc.webp"
+            alt=""
+          />
+          <img
+            src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/appstore.b3fa2df12dd0536e.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="f3">
+        <div class="row row-cols-4">
+          <div class="col">
+            <div class="d-flex flex-column mb-3 footeritems text-start">
+              <div class="p-2">
+                <h3>SUPPORT</h3>
+              </div>
+              <div class="p-2">
+                <p>Contact our Stores</p>
+              </div>
+              <div class="p-2">
+                <p>Delivery</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column mb-3 footeritems text-start">
+              <div class="p-2">
+                <h3>OUR SERVICES</h3>
+              </div>
+              <div class="p-2">
+                <p>Decathlon for Schools</p>
+              </div>
+              <div class="p-2">
+                <p>Decathlon for Corporates</p>
+              </div>
+              <div class="p-2">
+                <p>Decathlon for Sport Clubs</p>
+              </div>
+              <div class="p-2">
+                <p>Decathlon Gift Cards</p>
+              </div>
+              <div class="p-2">
+                <p>Installation & Assembly Services</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column mb-3 footeritems text-start">
+              <div class="p-2">
+                <h3>ABOUT US</h3>
+              </div>
+              <div class="p-2">
+                <p>Who we are</p>
+              </div>
+              <div class="p-2">
+                <p>Careers</p>
+              </div>
+              <div class="p-2">
+                <p>Made In India</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="d-flex flex-column mb-3 footeritems text-start">
+              <div class="p-2">
+                <h3>LEGAL</h3>
+              </div>
+              <div class="p-2">
+                <p>Return Policy</p>
+              </div>
+              <div class="p-2">
+                <p>Terms and Conditions</p>
+              </div>
+              <div class="p-2">
+                <p>Privacy Policy</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="f4">
+        <div
+          style="
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          "
+        >
+          <div class="transactionfooter">
+            <a class="navbar-brand" href="#">
+              <img
+                src="assets/icon1.svg"
+                alt="Bootstrap"
+                width="70"
+                height="70"
+              />
+            </a>
+            <div class="transactionfooter1">
+              <h4 style="display: inline; margin-bottom: 10px !important">
+                100% SECURE TRANSACTION
+              </h4>
+              <p>Secure SSL encryption</p>
+            </div>
+          </div>
+          <div style="width: 60%; display: flex; align-items: center; justify-content: space-evenly !important;">
+          <div class="transactionfooter2">
+            <a class="navbar-brand" href="#">
+              <img
+                src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/debit.f4805e7bb82b5f2c.svg"
+                alt="Facebook"
+                width="50"
+                height="30"
+              />
+            </a>
+            <a class="navbar-brand" href="#">
+              <img
+                src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/credit.c05545ef381afd56.svg"
+                alt="Bootstrap"
+                width="50"
+                height="30"
+              /> </a
+            ><a class="navbar-brand" href="#">
+              <img
+                src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/upi.83e3b6a59314da78.svg"
+                alt="Bootstrap"
+                width="50"
+                height="30"
+              /> </a
+            ><a class="navbar-brand" href="#">
+              <img
+                src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/net_banking.304011d4bbd25b7e.svg"
+                alt="Bootstrap"
+                width="50"
+                height="30"
+              />
+            </a>
+          </div>
+          <a
+            href="https://www.decathlon.in/sitemap"
+            style="
+              color: #98959b;
+              text-decoration: none;
+              font-family: Roboto Condensed, sans-serif;
+            "
+            >Site Map</a
+          >
+          <div style="display: flex; align-items: center; gap: 12px">
+            <span style="font-family: Roboto Condensed, sans-serif"
+              >DECATHLON is present in</span
+            >
+            <div class="dropdown">
+              <a
+                class="btn btn border border-secondary dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                46 Countries
+              </a>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="f5">
+        <h3>FOLLOW US</h3>
+        <div class="socialicons">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/logo-facebook.svg"
+              alt="Facebook"
+              width="30"
+              height="30"
+            />
+          </a>
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/logo-xing.svg"
+              alt="Facebook"
+              width="30"
+              height="30"
+            />
+          </a>
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/logo-instagram.svg"
+              alt="Facebook"
+              width="30"
+              height="30"
+            />
+          </a>
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/youtube.svg"
+              alt="Facebook"
+              width="30"
+              height="30"
+            />
+          </a>
+        </div>
+        <h3>SPORT ADVICE FOR YOU</h3>
+        <a
+          href="https://blog.decathlon.in/?utm_source=website&utm_medium=footer&_gl=1*1jspvu1*_ga*NzMyODA4MS4xNzE1MTAzNzUw*_ga_B81E8ESHR0*MTcxNTMxOTAwNi40LjEuMTcxNTMzNjc0Ni42MC4wLjA."
+          >blog.decathlon.in</a
+        >
+        <h3>EXPLORE SPORTS EVENTS NEAR YOU</h3>
+        <a
+          href="https://play.decathlon.in/?utm_source=footer&utm_medium=dsi%20website&utm_campaign=footer_button&_gl=1*6pmbzk*_ga*NzMyODA4MS4xNzE1MTAzNzUw*_ga_B81E8ESHR0*MTcxNTMxOTAwNi40LjEuMTcxNTMzNzY3OS42MC4wLjA."
+          >play.decathlon.in</a
+        >
+      </div>
     </div>
     </footer>
   </body>
