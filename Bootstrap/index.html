@@ -175,6 +175,18 @@ footer{
 }
 }
 @media (width <= 1023px) {
+  .transactionfoot{
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .transactionfoot2{
+    align-items: flex-start;
+    gap: 15px;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
   .fcontainer2 {
   width: 99%;
   height: auto;
@@ -1579,7 +1591,7 @@ footer{
       </div>
       
       <div class="f4" style="border-top: 1px solid #a4a4a4; border-bottom: 1px solid #a4a4a4; padding-top: 20px;  padding-bottom: 20px;">
-        <div
+        <div class="transactionfoot"
           style="
             display: flex;
             align-items: center;
@@ -1602,8 +1614,8 @@ footer{
               <p>Secure SSL encryption</p>
             </div>
           </div>
-          <div style="width: 90%; display: flex; align-items: center; justify-content: space-evenly !important;">
-          <div class="transactionfooter2">
+          <div class="transactionfoot2" style="width: 90%; display: flex; align-items: center; justify-content: space-evenly !important;">
+          <div class="transactionfooter2" style="display: flex; gap: 7px;">
             <a class="navbar-brand" href="#">
               <img
                 src="https://cdncontent.decathlon.in/_next/static/chunks/src/assets/img/debit.f4805e7bb82b5f2c.svg"
