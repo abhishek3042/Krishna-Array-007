@@ -222,7 +222,28 @@ footer{
   left:0px;
   transform: translateY(-50%);
 }
+/* top banner style starts */
+.banner {
+  width: 100%;
+  margin-top: 88px;
+  background-color: #3643ba;
+  overflow: hidden;
+  position: relative;
+}
 
+.banner p {
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 0;
+  margin: 0;
+  color: #f9fcff;
+  transition: transform 0.5s ease-in-out;
+}
+
+.banner p.hidden {
+  transform: translateY(-100%);
+}
+/* top banner style end */
 
 
     </style>
@@ -968,53 +989,80 @@ footer{
 
             setInterval(changeText, 1000); 
         </script>
+        
     </header>
+    <!-- top banner starts -->
+    <div class="banner relative">
+      <p id="changingTextTop">Welcome to FIT NATION</p>
+    </div>
+    <script>
+          document.addEventListener('DOMContentLoaded', function() {
+        const textArray = [
+          "Enjoy 200/- Off on your first purchase. T&C apply", 
+          "Free delivery on order worth 2999/- and above", 
+          "Welcome to FIT NATION"
+          ]; // Add your changing texts here
+        let index = 0;
+        const changingText = document.getElementById('changingTextTop');
+      
+        setInterval(() => {
+          changingText.classList.add('hidden');
+          setTimeout(() => {
+            index = (index + 1) % textArray.length;
+            changingText.textContent = textArray[index];
+            changingText.classList.remove('hidden');
+          }, 500);
+        }, 3000);
+      });
+  
+    </script>
+    <!-- top banner ends -->
    
     <!-- Abhishek Categories top  (Below⬇️)-->
-    <div class="categories-1 container text-center row column-gap-3 mx-auto " style="margin-top: 120px;">
-        <div class="card col border border-0" style="width: 18rem">
+    <div class="categories-1 container text-center row column-gap-3 mx-auto " style="margin-top: 50px;">
+        <div class="card border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1045477/k$2b757dc2a5f85e6057b8db1abe662cbe/Frame%20427321149.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Men</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1045475/k$12b5f8f2f6313a7d989942235a99d296/Frame%20427321150.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Women</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1068853/k$00d8091e4ca10180ad0fb81f6c1999f1/defaut.jpg?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Kids</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1045470/k$cbc3de3b70c7f9ab0898a6a0bac32002/Frame%20427321152.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Shoes</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1068852/k$308f24b6c873ff455e975ee52622fc8e/defaut.gif?format=auto&quality=70&f=1480x0" class="card-img-top " id="sliderImage" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Summer Collection</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1045469/k$8bc888972b89e13df47a82b55c563868/Frame%20427321093.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Sale</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1066101/k$389586e469464129321181a2c4577963/Frame%20427321153.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Accessories</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1085351/k$f9284d9246d939697d0091461278fe9d/defaut.jpg?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Sports Equipment</p>
@@ -1025,52 +1073,52 @@ footer{
     <!-- Abhishek Categories top  (above⬆️)-->
     
     <!-- Abhishek Bestseller In Summer Categories (Below⬇️)-->
-    <div class="cat1 container">
-      <div><h3>Bestseller In Summer</h3></div>
-      <div class="categories-2 container text-center row column-gap-3 mx-auto mt-5">
-          <div class="card col border border-0" style="width: 18rem">
+    <div class="cat1 container mx-auto">
+      <div class="ms-0"><h3>Bestseller In Summer</h3></div>
+      <div class="categories-2 d-flex flex-wrap align-content-center justify-content-center text-center mx-auto mt-5">
+          <div class="card border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1066102/k$c47a48d7e3a223c8680a3371b918e905/Frame%20427321555.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Men T-shirt</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1066090/k$a3409654a3d379eb85ce27292059e757/Frame%20427321583.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Men Shorts</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1066087/k$55c65d7c7ef78c83a90373c3d3c8a103/Frame%20427321584.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Men Track Pants</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1066082/k$7232432d9230b73fe7fefda7572ead6a/Frame%20427321585.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Men Trousers</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1066073/k$1eec09d0260a56c286e7e55e7fdcd22e/Frame%20427321586.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Women Tops</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1066065/k$3a70839bb8f840710be125c01a0b00bf/Frame%20427321587.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Women Shorts</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1066066/k$2bc3c0871570a8142ffaadddc364182d/Frame%20427321588.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Women Tracks</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1066111/k$9364c81ad8719b3c8c23677bfcd5351e/Frame%20427321589.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Leggings</p>
@@ -1082,52 +1130,52 @@ footer{
     <!-- Abhishek Bestseller In Summer Categories  (above⬆️)-->
     
     <!-- Abhishek Top Searched In Water Sport Collection (Below⬇️)-->
-    <div class="cat2 container">
-      <div><h3>Top Searched In Water Sport Collection</h3></div>
-      <div class="categories-2 container text-center row column-gap-3 mx-auto mt-5">
-          <div class="card col border border-0" style="width: 18rem">
+    <div class="cat2 container mx-auto">
+      <div class="ms-0"><h3>Top Searched In Water Sport Collection</h3></div>
+      <div class="categories-2 d-flex flex-wrap align-content-center justify-content-center text-center mx-auto mt-5">
+          <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1057677/k$bd3d939a9383d6c47f0dd0f04502f0ae/Frame%20427321294.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Swimming Goggles</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1057695/k$07440434ea9f5c84378a6e010386e198/Frame%20427321295.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Swimming Caps</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1057709/k$e772f192a31586e19c6ebb0a36c95036/Frame%20427321296.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Men Swim Costumes</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1057670/k$79ff78ad41f7be4c0816a885ba023c2e/Frame%20427321297.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Women Swim Costumes</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1057685/k$bc6ede656ba08452016281fa4e875b78/Frame%20427321301.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Kids Swim Costumes</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1066904/k$9b5ce101a6be8458f963f706d2bf7b7b/Frame%20427321631.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Swim Learing Accessory</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1057683/k$a4bf6574fd4740f5096beb87a8dcf120/Frame%20427321299.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Flip flops</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1057669/k$af983ba3998f9543635de84b38133881/Frame%20427321300.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Microfiber Towels</p>
@@ -1139,52 +1187,52 @@ footer{
     <!-- Abhishek Top Searched In Water Sport Collection Categories  (above⬆️)-->
         
     <!-- Abhishek Most Loved Accessories In Summer (Below⬇️)-->
-    <div class="cat3 container">
-        <div><h3>Most Loved Accessories In Summer</h3></div>
-      <div class="categories-2 container text-center row column-gap-3 mx-auto mt-5">
-          <div class="card col border border-0" style="width: 18rem">
+    <div class="cat3 container mx-auto">
+        <div class="ms-0"><h3>Most Loved Accessories In Summer</h3></div>
+      <div class="categories-3 d-flex flex-wrap align-content-center justify-content-center text-center mx-auto mt-5">
+          <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1066075/k$b1055e53ea9e57fe5500df733070d5e3/Frame%20427321590.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Sunglasses</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1066069/k$53c01b33716737eddcfb373cac825d99/Frame%20427321591.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Caps & Hat</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1066910/k$b93306ad58723d1ba41031c45e73a267/Frame%20427321595.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Socks</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1066088/k$953c6b5ee89448bcc644e102f1127e89/Frame%20427321596.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Water Bottles</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1066113/k$b661a691d23c09f580fa22c060c8be2c/Frame%20427321597.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Umbrella</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1083934/k$407817b588851f856b8cbd6a35d33eb8/defaut.jpg?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Travel Accessory</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1066911/k$c1f158765bfd19c13f89d6bd0ad130f7/Frame%20427321593.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Bags & Bagpack</p>
               </div>
           </div>
-          <div class="card col border border-0" style="width: 18rem">
+          <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
               <img src="https://contents.mediadecathlon.com/s1066912/k$c001690c250abd426acfdcf6a329cafa/Frame%20427321592.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
               <div class="card-body">
                   <p class="card-text">Massagers</p>
@@ -1196,52 +1244,52 @@ footer{
     <!-- Abhishek Most Loved Accessories In Summer Categories  (above⬆️)-->
 
     <!-- Abhishek Our Bestselling Categories (Below⬇️)-->
-    <div class="cat4 container">
-      <div><h3>Our Bestselling Categories</h3></div>
-    <div class="categories-2 container text-center row column-gap-3 mx-auto mt-5">
-        <div class="card col border border-0" style="width: 18rem">
+    <div class="cat4 container mx-auto">
+      <div class="ms-0"><h3>Our Bestselling Categories</h3></div>
+    <div class="categories-4 d-flex flex-wrap align-content-center justify-content-center text-center mx-auto mt-5">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1061015/k$27a6695b2ac8cfd3ed1e60e80c8126fc/Frame%20427321371.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Badminton Rackets</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1061019/k$12410cf8c9af9d0cf6b7a678730c3372/Frame%20427321372.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Tennis Rackets</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1060997/k$f3c8f9f459ac071e635296204c9c6d29/Frame%20427321373.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">TT Bats</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1061003/k$a0c4187fce78109525e3b31e7d07268c/Frame%20427321374.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">TT Tables</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1061012/k$35196efddb23cbe07d4141329a849e99/Frame%20427321375.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Shuttlecocks</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1061002/k$b7b07ff21368bc735b0e588be51b3251/Frame%20427321376.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Tennis Balls</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1060995/k$db25eb93beb600e73a23ad6c8decf2ed/Frame%20427321377.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Racket Grips</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1061022/k$ddbe8f4855747f888cd45148f515881b/Frame%20427321378.png?format=auto&quality=70&f=1680x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Kit Bags & Covers</p>
@@ -1250,52 +1298,52 @@ footer{
     </div>
   </div>
     <!-- Abhishek Trending In Fitness Collection  (above⬆️)-->
-    <div class="cat5 container">
-      <div><h3>Trending In Fitness Collection</h3></div>
-    <div class="categories-2 container text-center row column-gap-3 mx-auto mt-5">
-        <div class="card col border border-0" style="width: 18rem">
+    <div class="cat5 container mx-auto">
+      <div class="ms-0"><h3>Trending In Fitness Collection</h3></div>
+    <div class="categories-5 d-flex flex-wrap align-content-center justify-content-center text-center mx-auto mt-5">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1017218/k$511a4890d725f89c47632114bc3f17b5/Frame%20375.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Skipping Rope</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1017214/k$b862c06504ad09246c88e0b7322c8165/Frame%20385.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Resistance Band</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1017216/k$0bb3b0231aa67c4e4532330591bdf6bd/Frame%20382.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Yoga Mats</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1017220/k$2a8b5e679aba075c3d65d8d54adde4e2/Frame%20381.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Weight & Dumbbells</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1017222/k$be34b92da8d1a98bc0cf96c8da44d1d8/Frame%20384.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Exercise Bikes</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1017217/k$e370bba87476637cee694a48b955efec/Frame%20380.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Elliptical & Cross Trainer</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1017215/k$828e8969082a2893d5790c48c3fcb57a/Frame%20383.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Treadmills</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1025304/k$bd1f924da3c34bdddce9ae97e9e9b1f9/Frame%20386.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Punching Bags</p>
@@ -1305,52 +1353,52 @@ footer{
   </div>
     <!-- Abhishek Trending In Fitness Collection  (above⬆️)-->
     <!-- Abhishek Explore External Brands  (above⬆️)-->
-    <div class="cat6 container">
-      <div><h3>Explore External Brands</h3></div>
-    <div class="categories-2 container text-center row column-gap-3 mx-auto mt-5">
-        <div class="card col border border-0" style="width: 18rem">
+    <div class="cat6 container mx-auto">
+      <div class="ms-0"><h3>Explore External Brands</h3></div>
+    <div class="categories-2 d-flex flex-wrap align-content-center justify-content-center text-center mx-auto mt-5">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s998517/k$bf998f36b99683defc7cde8aef3456be/binocular%20sbc.jpg?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Explore All Brands</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1037444/k$ac816ebc3560c51eb0c1e96e791c47f9/Frame%20427320935.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Adidas</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1037448/k$ec4b81821106b6f13f0cecea87bcf143/Frame%20427320934.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Saucony</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1044753/k$fc9f8fd48705bf4992751dda37ffc099/Frame%20427321134.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Tifosi</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/b101253/k$686e19cd23cc88da05613f0df382eaec/TWT%202.jpeg?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">The Whole Truth</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/s1037447/k$4df2c1a1c5268a7fc62352c0cc1b09a2/Frame%20427320932.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Shokz</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/b92702/k$8f662e1111f54f080d91534e84321fc0/BLUB.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">BLUB</p>
             </div>
         </div>
-        <div class="card col border border-0" style="width: 18rem">
+        <div class="card col border border-0" style="width: 8rem; margin-left: 15px; margin-right: 15px;">
             <img src="https://contents.mediadecathlon.com/b99480/k$8d8110661e315c0ea5c31556794b8189/SEA.png?format=auto&quality=70&f=768x0" class="card-img-top" alt="..."/>
             <div class="card-body">
                 <p class="card-text">Sea of Summit</p>
