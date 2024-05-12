@@ -272,30 +272,128 @@ grid-row-gap: 10px;
 }
 /* top banner style end */
 
+.header1{
+  max-width:1270px !important;
+  margin: auto;
+   display: block;
+   
+   
+}
+
+.header1 .navbar1{
+  display:flex !important;
+  justify-content:space-between !important;
+ 
+
+}
+
+
+
+@media only screen and (max-width: 767px) {
+  
+   
+    .deliverylocation{
+   display:none;
+   }
+
+   .allsportstitle1{
+  display:none;
+}
+
+.signinh p{
+  display:none;
+} 
+
+.storeh {
+  display:none;
+} 
+
+.supporth {
+  display:none;
+} 
+
+
+.wishlisth p{
+  display:none;
+} 
+
+
+.carth p{
+  display:none;
+} 
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+.allsportstitle1{
+  display:none;
+}
+  
+ .search-container{
+  width:250px;
+   }
+  
+ 
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+.search-container{
+  width:400px;
+}
+
+
+.mainheader{
+  
+  
+ position: fixed;
+    top: 0;
+ 
+    width:100%;
+    background-color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+  height:80px;
+ 
+}
+  
+   
+}
+
+
 
     </style>
   <body>
-  <header class="position-relative w-100" style="background-color:#ffffff">
-          <nav class="navbar container-fluid bg-body-tertiary fixed-top  " style="background-color:#ffffff">
   
-         
-    <button class="navbar-toggler d-flex justify-content-center border-0 dropdown-btn mx-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+   
+<!--   header-start -->
+<div  class="mainheader">
+
+      <div class="container header1  navbar "  >
+<div class="navbar1  ">
+<div>
+   <button   class="navbar-toggler d-flex justify-content-center border-0 dropdown-btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-       <p class="text-black mx-4 d-none d-sm-block">
+       <p class=" allsportstitle1 text-black mx-4  ">
               All <br />
               Sports
             </p>
     </button>
-   
+</div>
+  
 
-     <div>
+     <div class="projectlogo1">
           <img
-            class="w-75 h-75"
+           style="width:180px; height:50px;"
             src="./assets/Image20240507225050.png"
           />
         </div>
 
-        <div class=" search-container w-25">
+        <div class="   search-container ">
           <form class="input-group">
             <input
             id="search"
@@ -313,9 +411,9 @@ grid-row-gap: 10px;
           </form>
         </div>
 
-        <div>
+        <div class="deliverylocation" >
           <p class="text-center">Delivery Location</p>
-          <div>
+          <div style="margin-top:-5px">
             <span style="color: #3643ba" class="fw-medium">560002</span>
             <button style="color: #3643ba" class="border-0 bg-white">
               Change
@@ -324,7 +422,7 @@ grid-row-gap: 10px;
         </div>
 
         <div class="d-flex">
-          <a style="text-decoration: none" class="mx-3 d-none d-sm-block" href="/signin">
+          <a  style="text-decoration: none" class=" signinh mx-6  " href="/signin">
             <div>
               <svg
                 class="text-black"
@@ -341,10 +439,10 @@ grid-row-gap: 10px;
                   stroke="currentColor"
                 ></path>
               </svg>
-              <p class="text-black mt-1 text-center">Sign In</p>
+              <p class="text-black mt-1 text-center ">Sign In</p>
             </div>
           </a>
-          <a style="text-decoration: none" class="mx-3 d-none d-sm-block" href="/store">
+          <a  style="text-decoration: none" class=" storeh mx-3  " href="/store">
             <div>
               <svg
                 class="text-black"
@@ -364,7 +462,7 @@ grid-row-gap: 10px;
               <p class="text-black mt-1 text-center">Store</p>
             </div>
           </a>
-          <a style="text-decoration: none" class="mx-3" href="/support">
+          <a style="text-decoration: none" class=" supporth mx-3 " href="/support">
             <div>
               <svg
                 class="text-black"
@@ -381,10 +479,10 @@ grid-row-gap: 10px;
                   stroke="currentColor"
                 ></path>
               </svg>
-              <p class="text-black mt-1 text-center d-none d-sm-block">Support</p>
+              <p class="text-black mt-1 text-center ">Support</p>
             </div>
           </a>
-          <a style="text-decoration: none" class="mx-3" href="/wishlist">
+          <a style="text-decoration: none" class=" wishlisth mx-3" href="/wishlist">
             <div>
               <svg
                 class="text-black"
@@ -401,10 +499,10 @@ grid-row-gap: 10px;
                   stroke="currentColor"
                 ></path>
               </svg>
-              <p class="text-black mt-1 text-center d-none d-sm-block">Wishlist</p>
+              <p class="text-black mt-1 text-center ">Wishlist</p>
             </div>
           </a>
-          <a style="text-decoration: none" class="mx-3" href="/cart">
+          <a style="text-decoration: none" class=" carth mx-3" href="/cart">
             <div>
               <svg
                 class="text-black"
@@ -437,31 +535,32 @@ grid-row-gap: 10px;
                 ></path>
               </svg>
 
-              <p class="text-black mt-1 text-center d-none d-sm-block">Cart</p>
+              <p class="text-black mt-1 text-center  ">Cart</p>
             </div>
           </a>
         </div>
-    
-   
-</nav>
+  
+</div>
+    </div> 
 
- <div class="  offcanvas offcanvas-end w-100  "  style="height:120px;" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+
+
+     <div class="  offcanvas offcanvas-end  w-100  "   style=" height:135px; " id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header d-flex " style="margin-bottom:40px;">
-       <nav class="navbar container-fluid bg-body-tertiary fixed-top  ">
-  
-         
-    <button class="navbar-toggler d-flex justify-content-center border-0 dropdown-btn mx-4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+       <div class="container header1  navbar">
+<div class="navbar1 ">
+
+   <button    class="navbar-toggler d-flex justify-content-center border-0 dropdown-btn " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
        <p class="text-black mx-4 d-none d-sm-block">
               All <br />
               Sports
             </p>
     </button>
-   
 
      <div>
           <img
-            class="w-75 h-75"
+           style="width:180px; height:50px;"
             src="./assets/Image20240507225050.png"
           />
         </div>
@@ -495,7 +594,7 @@ grid-row-gap: 10px;
         </div>
 
         <div class="d-flex">
-          <a style="text-decoration: none" class="mx-3 d-none d-sm-block" href="/signin">
+          <a style="text-decoration: none" class="mx-6 " href="/signin">
             <div>
               <svg
                 class="text-black"
@@ -515,7 +614,7 @@ grid-row-gap: 10px;
               <p class="text-black mt-1 text-center">Sign In</p>
             </div>
           </a>
-          <a style="text-decoration: none" class="mx-3 d-none d-sm-block" href="/store">
+          <a style="text-decoration: none" class="mx-3 " href="/store">
             <div>
               <svg
                 class="text-black"
@@ -572,7 +671,7 @@ grid-row-gap: 10px;
                   stroke="currentColor"
                 ></path>
               </svg>
-              <p class="text-black mt-1 text-center d-none d-sm-block">Wishlist</p>
+              <p class="text-black mt-1 text-center ">Wishlist</p>
             </div>
           </a>
           <a style="text-decoration: none" class="mx-3" href="/cart">
@@ -608,17 +707,24 @@ grid-row-gap: 10px;
                 ></path>
               </svg>
 
-              <p class="text-black mt-1 text-center d-none d-sm-block">Cart</p>
+              <p class="text-black mt-1 text-center ">Cart</p>
             </div>
           </a>
         </div>
     
-   
-</nav>
+ 
+
+</div>
+
+
+
+
+    </div>
+
      
         
       </div>
-      <div class="offcanvas-body  " style="overflow-y:hidden; ">
+      <div class="offcanvas-body  " style="overflow-y:hidden; margin-top:-80px ">
         <div class=" d-flex justify-content-around pe-3">
         
         
@@ -628,10 +734,10 @@ grid-row-gap: 10px;
              
             </a>
             
-            <ul class="dropdown-menu ">
+            <ul class="dropdown-menu" style="height:550px">
 
               <div class="d-flex justify-content-evenly">
-                  <div class="allsports1 h-100">
+                  <div class="allsports1 ">
                     <div class="d-flex flex-column ">
                         <p class="h6">Outdoor Sports</p>
                         <a href="#" class="text-decoration-none">Hiking and Trekking</a>
@@ -792,7 +898,7 @@ grid-row-gap: 10px;
             <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
              Men
             </a>
-            <ul class="dropdown-menu w-100">
+            <ul class="dropdown-menu " style="height:550px">
                 <div class=" d-flex justify-content-center">
                     <div class="d-flex flex-column mx-3">
                     <p class="h6">Men's Footwear</p>
@@ -907,7 +1013,7 @@ grid-row-gap: 10px;
             <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
              Women
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" style="height:550px">
              <div class="d-flex justify-content-center">
                 <div class="d-flex flex-column mx-2">
                     <p class="h6">Women's Footwear</p>
@@ -1023,7 +1129,7 @@ grid-row-gap: 10px;
             <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
              Kids
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" style="height:550px">
               <div class="d-flex justify-content-center">
                 <div class="d-flex flex-column mx-2">
                     <p class="h6">Kids' Tops</p>
@@ -1142,7 +1248,7 @@ grid-row-gap: 10px;
             <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
              Sports Accessories
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" style="height:550px">
               <div class="d-flex justify-content-center">
                 <div class="d-flex flex-column mx-2">
                     <p class="h6">Bags &amp; Backpacks</p>
@@ -1268,7 +1374,7 @@ grid-row-gap: 10px;
             <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
              Sports Equipment
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" style="height:550px">
               <div class="d-flex justify-content-center">
                 <div class="d-flex flex-column mx-5">
                     <p class="h6">Outdoor And Camping Equipment</p>
@@ -1387,7 +1493,7 @@ grid-row-gap: 10px;
             <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
              Gym Activewear & Equipment
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" style="height:550px">
               <div class="d-flex justify-content-center">
                 <div class="d-flex flex-column mx-5">
                     <p class="h6">Men Gym Activewear</p>
@@ -1499,7 +1605,7 @@ grid-row-gap: 10px;
             <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
              Online Exclusive Brands
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu" style="height:550px">
              
                    <div class="d-flex justify-content-center">
                     <div class="d-flex flex-column mx-5">
@@ -1596,9 +1702,10 @@ grid-row-gap: 10px;
     </div>
   </div>
 
-    </header>
-   
 
+</div>
+ 
+<!-- header end -->
 
 
 
