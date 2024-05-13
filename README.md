@@ -1,7 +1,7 @@
 # Krishna-Array-007
 
 ## Project Title 
-  ## FITNATION
+  # FITNATION
 
 ## Introduction
 The Fit Nation website is an online platform designed to cater to fitness enthusiasts, providing them with a comprehensive range of fitness-related resources, products, and community engagement. 
