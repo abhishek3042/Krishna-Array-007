@@ -13,12 +13,7 @@ Frontend
 Bootstrap: https://krishna-array-007-bootstrap-part1.netlify.app/
 
 ## Deployed Link (Figma)
-Figma: https://krishna-array-figma-part1.netlify.app/)
-
-## Directory Structure
-cd Krishna-Array-007 /
-- Bootstrap/
-- Figma/
+Figma: https://krishna-array-figma-part1.netlify.app/
 
 
 ## Video Walkthrough of the codebase
