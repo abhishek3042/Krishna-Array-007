@@ -7,10 +7,10 @@ Project Type:-
 Frontend
 
 Deployed App(Bootstrap):-
-Bootstrap: https://krishna-array-007-bootstrap-part1.netlify.app/
+ https://krishna-array-007-bootstrap-part1.netlify.app/
 
 Deployed App(Figma):-
-Figma: https://krishna-array-figma-part1.netlify.app/
+ https://krishna-array-figma-part1.netlify.app/
 
 Video Walkthrough of the project:-
 https://www.youtube.com/watch?v=uu_Qx7HxUMI
