@@ -1,6 +1,6 @@
 # Krishna-Array-007
 
-## Project Title :- ## FITNATION
+## Project Title : FITNATION
 
 
 ## Introduction
