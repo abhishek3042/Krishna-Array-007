@@ -16,9 +16,10 @@ Bootstrap: https://krishna-array-007-bootstrap-part1.netlify.app/
 Figma: https://krishna-array-figma-part1.netlify.app/)
 
 ## Directory Structure
-Krishna-Array-007/
-├─ Bootstrap/
-├─ Figma/
+my-app/
+├─ backend/
+├─ frontend/
+│  ├─ ...
 
 ## Video Walkthrough of the codebase
 https://www.youtube.com/watch?v=uu_Qx7HxUMI
