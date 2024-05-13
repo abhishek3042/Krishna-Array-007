@@ -18,7 +18,7 @@ Figma: https://deployed-site.whatever](https://krishna-array-figma-part1.netlify
 
 
 ## Video Walkthrough of the codebase
-(https://www.youtube.com/watch?v=uu_Qx7HxUMI)
+https://www.youtube.com/watch?v=uu_Qx7HxUMI
 
 ## Technology Stack
 List and provide a brief overview of the technologies used in the project.
