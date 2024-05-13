@@ -11,10 +11,10 @@ The Fit Nation website is an online platform designed to cater to fitness enthus
 Frontend 
 
 ## Deployed Link (Bootstrap)
-Bootstrap: https://deployed-site.whatever](https://krishna-array-007-bootstrap-part1.netlify.app/
+Bootstrap:https://krishna-array-007-bootstrap-part1.netlify.app/
 
 ## Deployed Link (Figma)
-Figma: https://deployed-site.whatever](https://krishna-array-figma-part1.netlify.app/)
+Figma: https://krishna-array-figma-part1.netlify.app/)
 
 
 ## Video Walkthrough of the codebase
