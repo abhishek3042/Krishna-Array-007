@@ -8,8 +8,6 @@ Frontend
 
 Deployed App:-
 Bootstrap: https://krishna-array-007-bootstrap-part1.netlify.app/
-
-Deployed App:-
 Figma: https://krishna-array-figma-part1.netlify.app/
 
 Video Walkthrough of the project:-
