@@ -12,6 +12,9 @@ Bootstrap: https://krishna-array-007-bootstrap-part1.netlify.app/
 Deployed App:-
 Figma: https://krishna-array-figma-part1.netlify.app/
 
+Video Walkthrough of the project:-
+https://www.youtube.com/watch?v=uu_Qx7HxUMI
+
 Technology Stack:-
 HTML
 CSS
