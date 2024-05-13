@@ -1,7 +1,7 @@
 # Krishna-Array-007
 
-## Project Title
-##FITNATION
+## Project Title :- FITNATION
+
 
 
 ## Introduction
@@ -12,10 +12,11 @@ The Fit Nation website is an online platform designed to cater to fitness enthus
 ## Project Type
 Frontend 
 
-## Deplolyed App
+## Deplolyed App(Bootstrap)
 Bootstrap: [https://deployed-site.whatever](https://krishna-array-007-bootstrap-part1.netlify.app/)
-Figma: [https://deployed-site.whatever](https://krishna-array-figma-part1.netlify.app/)
 
+## Deplolyed App(Figma)
+Figma: [https://deployed-site.whatever](https://krishna-array-figma-part1.netlify.app/)
 
 
 ## Video Walkthrough of the project
