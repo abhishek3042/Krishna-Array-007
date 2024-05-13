@@ -6,6 +6,9 @@ Introduction:-The Fit Nation website is an online platform designed to cater to 
 Project Type:-
 Frontend
 
+Deployed App
+Bootstrap: https://fitnation-frontend.example.com](https://krishna-array-007-bootstrap-part1.netlify.app/
+Figma: https://krishna-array-figma-part1.netlify.app/
 
 Technology Stack:-
 HTML
