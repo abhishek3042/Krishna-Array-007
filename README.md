@@ -19,20 +19,6 @@ Figma: https://krishna-array-figma-part1.netlify.app/
 
 <img src="https://drive.google.com/uc?export=view&id=1-gFcrfRpq1NSVsxd3Nk1wnRciMGauGZU" alt="viatourfigmaproject">
 
-## Directory Structure
-
-**Krishna-Array-007/**
-                                    
-      **Bootstrap/**:
-             - **assets/**
-             - **index.html**
-             - **package-lock.json**s.
-             - **package.json**
-
-       **Figma/**:
-             - **assets/**
-             - **index.html**
-
 
 
 ## Video Walkthrough of the codebase
