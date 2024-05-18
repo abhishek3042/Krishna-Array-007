@@ -23,20 +23,16 @@ Figma: https://krishna-array-figma-part1.netlify.app/
 
 **Krishna-Array-007/**
                                     
-**Bootstrap/**:
-- Contains Bootstrap-related files and subdirectories.
-  - **assets/**: Directory for Bootstrap assets.
-  - **index.html**: Main HTML file for Bootstrap.
-  - **package-lock.json**: Contains the exact versions of dependencies.
-  - **package.json**: Manages the project's dependencies and scripts.
+      **Bootstrap/**:
+             - **assets/**
+             - **index.html**
+             - **package-lock.json**s.
+             - **package.json**
 
-**Figma/**:
-- Contains Figma-related files and subdirectories.
-  - **assets/**: Directory for Figma assets.
-  - **index.html**: Main HTML file for Figma.
+       **Figma/**:
+             - **assets/**
+             - **index.html**
 
-
-  
 
 
 ## Video Walkthrough of the codebase
