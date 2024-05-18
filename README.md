@@ -20,22 +20,29 @@ Figma: https://krishna-array-figma-part1.netlify.app/
 <img src="https://drive.google.com/uc?export=view&id=1-gFcrfRpq1NSVsxd3Nk1wnRciMGauGZU" alt="viatourfigmaproject">
 
 ## Directory Structure
-```Krishna-Array-007/```
-```├── Bootstrap/```
-```│ ├── assets```
-```│ ├── index.html```
-```│ ├── package-lock.json```
-```│ ├── package.json```
-```├── Figma/```
-```│ ├── assets```
-```│ ├── index.html```
+
+**Krishna-Array-007/**
+                                    
+**Bootstrap/**:
+- Contains Bootstrap-related files and subdirectories.
+  - **assets/**: Directory for Bootstrap assets.
+  - **index.html**: Main HTML file for Bootstrap.
+  - **package-lock.json**: Contains the exact versions of dependencies.
+  - **package.json**: Manages the project's dependencies and scripts.
+
+**Figma/**:
+- Contains Figma-related files and subdirectories.
+  - **assets/**: Directory for Figma assets.
+  - **index.html**: Main HTML file for Figma.
+
+
   
 
 
 ## Video Walkthrough of the codebase
 https://www.youtube.com/watch?v=uu_Qx7HxUMI
 
-## Technology Stack
+## Technology Stack   
 List and provide a brief overview of the technologies used in the project.
 
 - HTML
