@@ -16,6 +16,9 @@ Bootstrap: https://krishna-array-007-bootstrap-part1.netlify.app/
 Figma: https://krishna-array-figma-part1.netlify.app/
 
 
+<img src="https://drive.google.com/uc?export=view&id=1lxsuhSZ6vWe8J1T-DnkIrPTuV1MCtU5c" alt="fitnationproject">
+
+
 ## Video Walkthrough of the codebase
 https://www.youtube.com/watch?v=uu_Qx7HxUMI
 
