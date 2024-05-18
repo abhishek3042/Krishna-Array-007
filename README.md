@@ -21,17 +21,17 @@ Figma: https://krishna-array-figma-part1.netlify.app/
 
 ## Directory Structure
 
-**Krishna-Array-007/**:
+Krishna-Array-007/:
 
-**Bootstrap/**:
-  - **assets/**
-  - **index.html**
-  - **package-lock.json**
-  - **package.json**
+Bootstrap/:
+  - assets/
+  - index.html
+  - package-lock.json
+  - package.json
 
-**Figma/**:
-  - **assets/**
-  - **index.html**
+Figma/:
+  - assets/
+  - index.html
 
 
 
